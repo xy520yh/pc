@@ -188,11 +188,11 @@ body{position: relative;-webkit-text-size-adjust: none;color: #fff;font-size: 0.
 .swiper-fullscreen .swiper-pagination  span.swiper-pagination-bullet-active:nth-of-type(3){background:url(../images/logo3.png);width:0.4rem;height:0.39rem; background-size: 0.4rem 0.39rem;display: block;z-index: 10;}
 .swiper-fullscreen .swiper-pagination  span.swiper-pagination-bullet-active:nth-of-type(4){background:url(../images/logo4.png);width:0.4rem;height:0.39rem;background-size: 0.4rem 0.39rem;display: block;z-index: 10;}
 .swiper-fullscreen .swiper-pagination  span.swiper-pagination-bullet-active:nth-of-type(5){background:url(../images/logo5.png);width:0.4rem;height:0.39rem;background-size: 0.4rem 0.39rem;display: block;z-index: 10;}
-.swiper-fullscreen  .swiper-pagination-bullet-active::before {content: "";	position: absolute;	left: -25%;	top: -25%;height: 0.6rem;	
+/* .swiper-fullscreen  .swiper-pagination-bullet-active::before {content: "";	position: absolute;	left: -25%;	top: -25%;height: 0.6rem;	
 		width:0.6rem;	background: rgba(255, 255, 255, 0.479);	
 		z-index: -1;		border-radius: 50%;		 transform-origin: center center;	-webkit-animation: pulse-border 0.8s 0.3s ease-out infinite;
 		-o-animation: pulse-border 0.8s 0.3s ease-out infinite;	-ms-animation: pulse-border 0.8s 0.3s ease-out infinite;
-		-moz-animation: pulse-border 0.8s 0.3s ease-out infinite;animation: pulse-border 0.8s 0.3s ease-out infinite;}
+		-moz-animation: pulse-border 0.8s 0.3s ease-out infinite;animation: pulse-border 0.8s 0.3s ease-out infinite;} */
 
 .slide_left{width:6rem;}
 .slide_box{margin:0 auto;width: 15rem;display: flex;margin-top:0rem;position: relative;}
