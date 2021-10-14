@@ -160,11 +160,11 @@
         },
       
         on:{
-            resize: function () {
-                setTimeout(() => {
-                mySwiper .update()
-                }, 500)   //延时器很重要，不加可能会出错
-             },
+            // resize: function () {
+            //     setTimeout(() => {
+            //     mySwiper .update()
+            //     }, 500)   //延时器很重要，不加可能会出错
+            //  },
         init: function(){
             swiperAnimateCache(this); //隐藏动画元素 
             swiperAnimate(this); //初始化完成开始动画
@@ -208,13 +208,15 @@ wow.init();
 //公司介绍5张轮播图
 var swiper = new Swiper('.swiper-fullscreen', {
       direction: 'vertical',
-      autoplay: {
-        delay: 4000,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
-     },
-     // mousewheel: true,
-      noSwiping : true,
+      autoplay:true,
+    //   autoplay: {
+    //     delay: 4000,
+    //     stopOnLastSlide: false,
+    //     disableOnInteraction: true,
+    //  },
+    mousewheel: true,
+      //  noSwiping : true,
+     loop:true,
       effect: 'fade', 
       observer: true,
       pagination: {
@@ -223,11 +225,11 @@ var swiper = new Swiper('.swiper-fullscreen', {
       },
       resizeObserver: true,
       on: {
-        resize: function(){
-            setTimeout(() => {
-                swiper .update()
-                }, 500)   //延时器很重要，不加可能会出错
-        }, 
+        // resize: function(){
+        //     setTimeout(() => {
+        //         swiper .update()
+        //         }, 500)   //延时器很重要，不加可能会出错
+        // }, 
         init: function () {
           swiperAnimateCache(this); //隐藏动画元素 
           swiperAnimate(this); //初始化完成开始动画
@@ -259,11 +261,11 @@ $(".swiper-fullscreen .swiper-pagination-bullet").hover(function() {
       loop: true,
      // autoplay:true,
       on: {
-            resize: function(){
-                setTimeout(() => {
-                    systemThumbs .update()
-                }, 500)   //延时器很重要，不加可能会出错
-            }, 
+            // resize: function(){
+            //     setTimeout(() => {
+            //         systemThumbs .update()
+            //     }, 500)   //延时器很重要，不加可能会出错
+            // }, 
             init: function(){
               var index = this.realIndex;
                 $(".event_year li").eq(index).fadeIn().siblings().hide(); 
@@ -296,11 +298,11 @@ $(".swiper-fullscreen .swiper-pagination-bullet").hover(function() {
      },
 
        on:{
-        resize: function(){
-            setTimeout(() => {
-                galleryTop .update()
-                }, 500)   //延时器很重要，不加可能会出错
-        }, 
+        // resize: function(){
+        //     setTimeout(() => {
+        //         galleryTop .update()
+        //         }, 500)   //延时器很重要，不加可能会出错
+        // }, 
         init: function(){
             swiperAnimateCache(this); //隐藏动画元素 
             swiperAnimate(this); //初始化完成开始动画
